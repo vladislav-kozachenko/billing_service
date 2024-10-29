@@ -1,0 +1,10 @@
+handle_payments:
+  cron: '0 0 16 * * *'
+  class: HandlePaymentsJob
+  queue: default
+  description: Runs payments for expired subscriptions every day
+complete_payments:
+  cron: '0 0 17 * * *'
+  class: CompletePaymentsJob
+  queue: default
+  description: Runs payments for expired subscriptions every day

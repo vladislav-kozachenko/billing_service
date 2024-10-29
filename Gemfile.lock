@@ -75,6 +75,9 @@ GEM
       tzinfo (~> 2.0, >= 2.0.5)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
+    annotate (3.2.0)
+      activerecord (>= 3.2, < 8.0)
+      rake (>= 10.4, < 14.0)
     base64 (0.2.0)
     bigdecimal (3.1.8)
     bindex (0.8.1)
@@ -122,6 +125,10 @@ GEM
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
+    interactor (3.1.2)
+    interactor-rails (2.2.1)
+      interactor (~> 3.0)
+      rails (>= 4.2)
     io-console (0.7.2)
     irb (1.14.1)
       rdoc (>= 4.0.0)
@@ -161,6 +168,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.7-x86_64-linux)
       racc (~> 1.4)
+    paranoia (3.0.0)
+      activerecord (>= 6, < 8.1)
     pg (1.5.9)
     psych (5.1.2)
       stringio
@@ -304,6 +313,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_record_query_trace
+  annotate
   bootsnap
   bullet
   byebug
@@ -312,7 +322,9 @@ DEPENDENCIES
   factory_bot_rails
   faker
   importmap-rails
+  interactor-rails
   jbuilder
+  paranoia
   pg
   puma (>= 5.0)
   rails (~> 7.2.1, >= 7.2.1.2)

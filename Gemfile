@@ -11,6 +11,9 @@ gem 'pg'
 gem 'sidekiq', '~> 5.2'
 gem 'sidekiq-scheduler'
 gem 'state_machines-activerecord'
+gem 'annotate'
+gem 'paranoia'
+gem 'interactor-rails'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]

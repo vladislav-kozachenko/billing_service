@@ -37,3 +37,6 @@
 /.idea
 
 database.yml
+secrets.yml
+
+/config/credentials/development.key
